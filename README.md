@@ -20,7 +20,8 @@ Step 4: Use SHAP method to evaluate the feature importance. Train (70%) and test
 
 
 Results:
-The quantile analysis shows that the 101 alpha factors had great predictive capability before 2015. However, the prediction is almost eliminate after the publication of the reference paper (2019-2021).
+1. The quantile analysis shows that the 101 alpha factors had great predictive capability before 2015. However, the prediction is almost eliminate after the publication of the reference paper (2019-2021).
+2. xgboost modellings show a even worse output: the mean return from the top quantile is smaller than the bottom one, which presents a negative result at this system / alpha factors.
 
 Period: 2010-2015
 Label: return-1d (unit is the base point, 1E-4)
