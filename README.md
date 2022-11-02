@@ -2,11 +2,18 @@
 101 Formulaic Alphas with AU market
 
 Target Stocks: Australia
+
+# Goal
+This is an attempt to test the predictivity of alpha factors during two period, before and after these factors were published.
+Reference: "101 Formulaic Alphas".
+
+# Period
 1st Period: 1, January, 2010 - 1, January, 2015
 2nd Period: 1, January, 2019 - 1, January, 2021
 
 ************************************************************************************
 
+# Method
 This is our second attempt to test the performance of the alpha factors based on this paper, "101 Formulaic Alphas". The method is as follows.
 
 Step 1: Read in and clean the price data of the stocks in the Philippine market. Then, all the values of 101 alpha factors are calculated.
@@ -19,7 +26,7 @@ Step 4: Use SHAP method to evaluate the feature importance. Train (70%) and test
 
 
 
-Results:
+# Results
 1. The quantile analysis shows that the 101 alpha factors had great predictive capability before 2015. However, the prediction is almost eliminate after the publication of the reference paper (2019-2021).
 2. xgboost modellings show a even worse output: the mean return from the top quantile is smaller than the bottom one, which presents a negative result at this system / alpha factors.
 
